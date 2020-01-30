@@ -18,12 +18,22 @@ const Heading = styled.h1`
   margin: 0
 `
 
+const Nav = styled.ul`
+
+`
+
+const NavUl = styled.ul`
+list-style-type: none;
+`
+
+const NavLi = styled.li`
+
+`
+
 const HeadingLink = styled(Link)`
   color: white;
   textDecoration: none;
 `
-
-
 
 const Header = ({ siteTitle }) => (
   <Container>
@@ -33,6 +43,13 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </HeadingLink>
       </Heading>
+      <Nav>
+        <NavUl>
+          <NavLi>Home</NavLi>
+          <NavLi>Motto</NavLi>
+          <NavLi>Projects</NavLi>
+        </NavUl>
+      </Nav>
     </Inner>
   </Container>
 )
