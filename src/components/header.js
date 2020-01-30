@@ -18,7 +18,7 @@ const Heading = styled.h1`
   margin: 0
 `
 
-const Nav = styled.ul`
+const Nav = styled.nav`
 
 `
 
