@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
-import Media from "react-media"
+import MediaQuery from "react-media"
 import HeaderLogo from '../images/headerLogo.png'
 import DesktopNav from './nav/desktopNav'
 import ResponsiveNav from './nav/responsiveNav'
@@ -39,9 +39,9 @@ const Header = () => (
         <img src={HeaderLogo} alt="Logo" />
       </HeaderLogoLink>
       <Nav>
-        <Media query="(max-width: 880px)">
+        <MediaQuery query="(max-width: 880px)">
           {matches => (matches ? <ResponsiveNav /> : <DesktopNav />)}
-        </Media>
+        </MediaQuery>
       </Nav>
     </Inner>
   </Container>
