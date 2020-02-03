@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
+import HeaderLogo from '../images/headerLogo.png'
+
 const Container = styled.header`
   background: rebeccapurple;
   marginBottom: 1.45rem;
@@ -35,12 +37,12 @@ const NavLi = styled(Link)`
 `
 
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <Container>
     <Inner>
       <Heading>
         <HeadingLink to="/">
-          {siteTitle}
+          <img src={HeaderLogo} alt="Logo" />
         </HeadingLink>
       </Heading>
       <Nav>
