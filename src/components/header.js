@@ -45,9 +45,9 @@ const Header = ({ siteTitle }) => (
       </Heading>
       <Nav>
         <NavUl>
-          <NavLi>Home</NavLi>
-          <NavLi>Motto</NavLi>
-          <NavLi>Projects</NavLi>
+          <NavLi to="/">Home</NavLi>
+          <NavLi to="/">Motto</NavLi>
+          <NavLi to="/">Projects</NavLi>
         </NavUl>
       </Nav>
     </Inner>
