@@ -4,7 +4,8 @@ import React from "react"
 import styled from "styled-components"
 
 import HeaderLogo from '../images/headerLogo.png'
-import DesktopNav from './nav/desktopNav.js'
+import DesktopNav from './nav/desktopNav'
+import ResponsiveNav from './nav/responsiveNav'
 
 const Container = styled.header`
   border-bottom: 2px solid black;
@@ -39,6 +40,7 @@ const Header = () => (
       </HeaderLogoLink>
       <Nav>
         <DesktopNav />
+        <ResponsiveNav />
       </Nav>
     </Inner>
   </Container>
