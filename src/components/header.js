@@ -15,9 +15,13 @@ const Inner = styled.div`
 `
 
 const Heading = styled.h1`
-  margin: 0
+margin: 0
 `
 
+const HeadingLink = styled(Link)`
+  color: white;
+  textDecoration: none;
+`
 const Nav = styled.nav`
 
 `
@@ -26,14 +30,10 @@ const NavUl = styled.ul`
 list-style-type: none;
 `
 
-const NavLi = styled.li`
+const NavLi = styled(Link)`
 
 `
 
-const HeadingLink = styled(Link)`
-  color: white;
-  textDecoration: none;
-`
 
 const Header = ({ siteTitle }) => (
   <Container>
