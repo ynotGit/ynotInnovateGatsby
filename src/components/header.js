@@ -12,18 +12,16 @@ const Container = styled.header`
 
 const Inner = styled.div`
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1060px;
   padding: 1.45rem 1.0875rem;
   display: flex;
+  align-items: center;
+  align-content: center;
 `
 
-const Heading = styled.h1`
+const Heading = styled(Link)`
   margin: 0;
   flex: 1;
-`
-
-const HeadingLink = styled(Link)`
-  
 `
 
 const Nav = styled.nav`
@@ -32,17 +30,17 @@ const Nav = styled.nav`
 `
 
 const NavLink = styled(Link)`
-  
+  text-decoration: none;
+  padding: 0 1rem;
+  color: white;
 `
 
 
 const Header = () => (
   <Container>
     <Inner>
-      <Heading>
-        <HeadingLink to="/">
-          <img src={HeaderLogo} alt="Logo" />
-        </HeadingLink>
+      <Heading to="/">
+        <img src={HeaderLogo} alt="Logo" />
       </Heading>
       <Nav>
         <NavLink to="/">Home</NavLink>
