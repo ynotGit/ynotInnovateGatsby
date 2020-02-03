@@ -7,33 +7,32 @@ import HeaderLogo from '../images/headerLogo.png'
 
 const Container = styled.header`
   background: rebeccapurple;
-  marginBottom: 1.45rem;
+  margin-bnottom: 1.45rem;
 `
 
 const Inner = styled.div`
   margin: 0 auto;
-  maxWidth: 960px;
+  max-width: 960px;
   padding: 1.45rem 1.0875rem;
+  display: flex;
 `
 
 const Heading = styled.h1`
-margin: 0
+  margin: 0;
+  flex: 1;
 `
 
 const HeadingLink = styled(Link)`
-  color: white;
-  textDecoration: none;
+  
 `
+
 const Nav = styled.nav`
-
+ flex: 1;
+ text-align: right;
 `
 
-const NavUl = styled.ul`
-list-style-type: none;
-`
-
-const NavLi = styled(Link)`
-
+const NavLink = styled(Link)`
+  
 `
 
 
@@ -46,11 +45,9 @@ const Header = () => (
         </HeadingLink>
       </Heading>
       <Nav>
-        <NavUl>
-          <NavLi to="/">Home</NavLi>
-          <NavLi to="/">Motto</NavLi>
-          <NavLi to="/">Projects</NavLi>
-        </NavUl>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/">Motto</NavLink>
+        <NavLink to="/">Projects</NavLink>
       </Nav>
     </Inner>
   </Container>
