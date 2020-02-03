@@ -11,7 +11,7 @@ const NavLink = styled(Link)`
 
 const ResponsiveNav = () => (
     <Fragment>
-        <NavLink to='/'>Home</NavLink>
+        <NavLink to='/'>Test</NavLink>
         <NavLink to='/'>Motto</NavLink>
         <NavLink to='/'>Contact</NavLink>
     </Fragment>
