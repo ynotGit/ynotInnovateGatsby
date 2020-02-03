@@ -4,10 +4,11 @@ import React from "react"
 import styled from "styled-components"
 
 import HeaderLogo from '../images/headerLogo.png'
+import DesktopNav from './nav/desktopNav.js'
 
 const Container = styled.header`
-  background: rebeccapurple;
-  margin-bnottom: 1.45rem;
+  border-bottom: 2px solid black;
+  margin-bottom: 1.45rem;
 `
 
 const Inner = styled.div`
@@ -19,7 +20,7 @@ const Inner = styled.div`
   align-content: center;
 `
 
-const Heading = styled(Link)`
+const HeaderLogoLink = styled(Link)`
   margin: 0;
   flex: 1;
 `
@@ -29,23 +30,15 @@ const Nav = styled.nav`
  text-align: right;
 `
 
-const NavLink = styled(Link)`
-  text-decoration: none;
-  padding: 0 1rem;
-  color: white;
-`
-
 
 const Header = () => (
   <Container>
     <Inner>
-      <Heading to="/">
+      <HeaderLogoLink to="/">
         <img src={HeaderLogo} alt="Logo" />
-      </Heading>
+      </HeaderLogoLink>
       <Nav>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/">Motto</NavLink>
-        <NavLink to="/">Projects</NavLink>
+        <DesktopNav />
       </Nav>
     </Inner>
   </Container>

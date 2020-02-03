@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "Y Not Innovate",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Powering my business site with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Tony Porter <tony@ynotinnovate.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.19.5",
@@ -19,6 +19,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+    "react-media": "^1.10.0",
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
