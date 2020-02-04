@@ -64,16 +64,19 @@ const burgerMenuStyle = {
 const NavLink = styled(Link)`
   text-decoration: none;
   padding: 0 1rem;
+  display: block;
 `
 
 const isMenuOpen = state => state.isOpen
 
 const ResponsiveNav = () => (
-    <BurgerMenu right onStateChange={isMenuOpen} styles={burgerMenuStyle}>
-        <NavLink to='/'><FaHome /> Test</NavLink>
-        <NavLink to='/'><FaDiceD20 /> Motto</NavLink>
-        <NavLink to='/'><FaDraftingCompass /> Contact</NavLink>
-    </BurgerMenu>
+    <div id="outer-container">
+        <BurgerMenu right onStateChange={isMenuOpen} styles={burgerMenuStyle} pageWrapId={"page-wrap"} outerContainerId={"outer-container"}>
+            <NavLink to='/'><FaHome /> Test</NavLink>
+            <NavLink to='/'><FaDiceD20 /> Motto</NavLink>
+            <NavLink to='/'><FaDraftingCompass /> Contact</NavLink>
+        </BurgerMenu>
+    </div>
 )
 
 ResponsiveNav.propTypes = {
